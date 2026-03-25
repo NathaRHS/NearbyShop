@@ -194,6 +194,7 @@ function ProductDetailPage() {
             <ul className="product-details-list">
               <li><strong>Product:</strong> {product?.nom || '-'}</li>
               <li><strong>Price:</strong> {formatPrice(product?.prix) || '-'}</li>
+              <li><strong>Total Price:</strong> {formatPrice(product?.prix * quantity) || '-'}</li>
             </ul>
           </section>
         </div>
