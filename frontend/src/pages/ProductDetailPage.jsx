@@ -34,6 +34,7 @@ function ProductDetailPage() {
   const [isZoomed, setIsZoomed] = useState(false)
   const [zoomOrigin, setZoomOrigin] = useState('50% 50%')
   const [isDescriptionImageOpen, setIsDescriptionImageOpen] = useState(false)
+  const [isDevelopmentPopupOpen, setIsDevelopmentPopupOpen] = useState(false)
 
   function handleMainImageMove(event) {
     const bounds = event.currentTarget.getBoundingClientRect()
@@ -170,7 +171,13 @@ function ProductDetailPage() {
                 +
               </button>
             </div>
-            <button className="addToBag">Add to bag</button>
+            <button
+              type="button"
+              className="addToBag"
+              onClick={() => setIsDevelopmentPopupOpen(true)}
+            >
+              Add to bag
+            </button>
           </div>
           <section className="product-description">
             <p className="product-summary">{product?.description || ''}</p>
@@ -222,6 +229,30 @@ function ProductDetailPage() {
               src={product.descriptionImageUrl}
               alt={`${product?.nom ?? 'Product'} details full size`}
             />
+          </div>
+        </div>
+      ) : null}
+      {isDevelopmentPopupOpen ? (
+        <div
+          className="developmentPopupOverlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Development notice"
+          onClick={() => setIsDevelopmentPopupOpen(false)}
+        >
+          <div
+            className="developmentPopup"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h2>Site update</h2>
+            <p>This site is currently under development.</p>
+            <button
+              type="button"
+              className="developmentPopupButton"
+              onClick={() => setIsDevelopmentPopupOpen(false)}
+            >
+              Close
+            </button>
           </div>
         </div>
       ) : null}

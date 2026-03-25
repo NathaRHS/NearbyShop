@@ -417,6 +417,51 @@ nav ul a:focus-visible::after {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
 }
 
+.developmentPopupOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1250;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(17, 24, 39, 0.48);
+  backdrop-filter: blur(8px);
+}
+
+.developmentPopup {
+  width: min(100%, 28rem);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.22);
+  text-align: center;
+}
+
+.developmentPopup h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+}
+
+.developmentPopup p {
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.developmentPopupButton {
+  min-width: 10rem;
+  min-height: 3.25rem;
+  margin-top: 1.5rem;
+  padding: 0 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .product-details-title {
   font-size: 1.15rem;
   font-weight: 700;
