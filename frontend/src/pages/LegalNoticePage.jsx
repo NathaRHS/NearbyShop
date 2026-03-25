@@ -1,8 +1,12 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/conditionGenerale.css'
-
+import { useEffect } from 'react'
 function LegalNoticePage() {
+  useEffect(() => {
+    document.title = "Legal Notice - NEARBY SHOP LLC";  
+  }
+  , []);
   return (
     <div className="container">
       <Header />

@@ -1,8 +1,13 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/conditionGenerale.css'
+import { useEffect } from 'react'
 
 function PrivacyPolicyPage() {
+  useEffect(() => {
+    document.title = "Privacy Policy - NEARBY SHOP LLC";  
+  }
+  , []);
   return (
     <div className="container">
       <Header />

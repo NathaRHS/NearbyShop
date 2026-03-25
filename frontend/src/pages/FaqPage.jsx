@@ -6,6 +6,9 @@ import '../styles/compte.css'
 
 function FaqPage() {
   useEffect(() => initializeScrollReveal(), [])
+  useEffect(() => {
+    document.title = "FAQ - NEARBY SHOP LLC";  
+  }, []);
 
   return (
     <div className="container">
