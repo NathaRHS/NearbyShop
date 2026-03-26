@@ -30,6 +30,7 @@ function formatPrice(value) {
 function HomePage() {
   const [products, setProducts] = useState([])
   const [isLoadingProducts, setIsLoadingProducts] = useState(true)
+  const [isDevelopmentPopupOpen, setIsDevelopmentPopupOpen] = useState(false)
 
   useEffect(() => initializeScrollReveal(), [])
 
@@ -124,18 +125,50 @@ function HomePage() {
           : products.map((product) => (
               <div className="product" key={product.id}>
                 <RouterLink to={`/product-detail/${product.id}`}>
-                  <img src={product.imageUrl} alt="" width="300" />
+                  <img className="productCardImage" src={product.imageUrl} alt="" width="300" />
                 </RouterLink>
                 <div className="productInformation">
                   <h2>{product.nom}</h2>
                   <div className="prices">
                     <p className="oldPrice"></p>
                     <p className="newPrice">{formatPrice(product.prix)}</p>
+                    <button
+                      type="button"
+                      className="addToCartButton"
+                      aria-label={`Add ${product.nom} to cart`}
+                      onClick={() => setIsDevelopmentPopupOpen(true)}
+                    >
+                      <img src="/images/addtoCart.svg" alt="" />
+                    </button>
                   </div>
                 </div>
               </div>
             ))}
       </section>
+      {isDevelopmentPopupOpen ? (
+        <div
+          className="developmentPopupOverlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Development notice"
+          onClick={() => setIsDevelopmentPopupOpen(false)}
+        >
+          <div
+            className="developmentPopup"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h2>Site update</h2>
+            <p>This site is currently under development.</p>
+            <button
+              type="button"
+              className="developmentPopupButton"
+              onClick={() => setIsDevelopmentPopupOpen(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      ) : null}
 
       <Footer />
     </div>
