@@ -71,7 +71,6 @@ function TermsPage() {
             <h3>6. Contact Information</h3>
             <ul className="termList">
               <li>Email: contact@nearby-shop.store</li>
-              <li>Phone: +18165830032</li>
               <li>Mailing Address: 117 S LEXINGTON ST STE 100, HARRISONVILLE MO 64701, USA</li>
             </ul>
           </article>

@@ -88,7 +88,6 @@ function PrivacyPolicyPage() {
           <h3>9. Contact Details</h3>
           <p>If you have any questions about this Privacy Policy, please contact us:</p>
           <p>NEARBY SHOP LLC 117 S LEXINGTON ST STE 100, HARRISONVILLE MO 64701, USA.</p>
-          <p>Tel : +18165830032</p>
         </div>
       </section>
       <Footer />

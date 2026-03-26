@@ -6,9 +6,10 @@ import '../styles/compte.css'
 
 function FaqPage() {
   useEffect(() => initializeScrollReveal(), [])
+
   useEffect(() => {
-    document.title = "FAQ - NEARBY SHOP LLC";  
-  }, []);
+    document.title = 'FAQ - NEARBY SHOP LLC'
+  }, [])
 
   return (
     <div className="container">
@@ -36,8 +37,8 @@ function FaqPage() {
           </article>
 
           <article className="question">
-            <h2>How to track my order if I donâ€™t have an account?</h2>
-            <p>Itâ€™s very simple! As soon as your package leaves our warehouse, you receive a shipping email containing a carrier tracking link. You will be able to follow each step of the delivery in real time.</p>
+            <h2>How to track my order if I don&apos;t have an account?</h2>
+            <p>It&apos;s very simple! As soon as your package leaves our warehouse, you receive a shipping email containing a carrier tracking link. You will be able to follow each step of the delivery in real time.</p>
           </article>
         </section>
 
@@ -75,7 +76,7 @@ function FaqPage() {
         <section className="faqSection">
           <article className="question">
             <h2>What are the different existing deliveries?</h2>
-            <p>Shipping option: Standard Shipping Reliable delivery with a typical timeframe of 02 to 04 business days and VIP Priority Shipping â€“ It is our premium service including Express Delivery and Full Shipping Insurance. This option provides a shorter delivery window of 24 hours business days and covers the package against loss or damage during transit.</p>
+            <p>Shipping option: Standard Shipping Reliable delivery with a typical timeframe of 02 to 04 business days and VIP Priority Shipping - It is our premium service including Express Delivery and Full Shipping Insurance. This option provides a shorter delivery window of 24 hours business days and covers the package against loss or damage during transit.</p>
           </article>
 
           <article className="question">
@@ -95,7 +96,7 @@ function FaqPage() {
         </section>
 
         <section className="faqContact">
-          <p>You havenâ€™t found your answer? Contact our team here: contact@nearby-shop.store or send sms to +18165830032</p>
+          <p>You haven&apos;t found your answer? Contact our team here: contact@nearby-shop.store</p>
         </section>
       </main>
 

@@ -34,7 +34,6 @@ function LegalNoticePage() {
             <p>For any inquiries, please contact our team through the following official channels:</p>
             <ul className="termList">
               <li>Email: contact@nearbyshop.com</li>
-              <li>Phone: +18165830032</li>
               <li>Mailing Address: 117 S LEXINGTON ST STE 100, HARRISONVILLE MO 64701, USA.</li>
             </ul>
           </article>
