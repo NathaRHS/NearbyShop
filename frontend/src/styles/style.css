@@ -16,8 +16,8 @@
   --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.08);
   --shadow-card: 0 20px 40px rgba(15, 23, 42, 0.08);
   --radius-lg: 1.75rem;
-  --radius-md: 1.375rem;
-  --radius-sm: 1rem;
+  --radius-md: 5px;
+  --radius-sm: 5px;
   --control-height-lg: 5rem;
   --control-height-md: 3.9rem;
   --input-width: 25rem;
@@ -396,8 +396,8 @@ nav ul a:focus-visible::after {
 
 .productsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 260px));
+  gap: 24px;
   width: min(100%, var(--content-max-width));
   align-items: start;
   justify-content: center;
@@ -406,7 +406,7 @@ nav ul a:focus-visible::after {
 .product {
   width: 100%;
   margin: 0;
-  border-radius: var(--radius-md);
+  border-radius: 5px;
   overflow: hidden;
   background: var(--surface);
   border: 1px solid rgba(17, 24, 39, 0.06);
@@ -432,28 +432,30 @@ body.js-ready .productsGrid .product.scroll-reveal.is-visible:hover {
 
 .product img {
   width: 100%;
-  aspect-ratio: 4 / 4.5;
+  aspect-ratio: 4 / 4.3;
   object-fit: cover;
   background: var(--surface-muted);
 }
 
 .productImagePlaceholder {
   width: 100%;
-  aspect-ratio: 4 / 4.5;
+  aspect-ratio: 4 / 4.3;
   background: var(--surface-muted);
 }
 
 .productInformation {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 20px 20px 22px;
+  gap: 12px;
+  padding: 16px 16px 18px;
 }
 
 .product h2 {
   width: 100%;
   font-size: 1.1rem;
   line-height: 1.4;
+  font-weight: 300;
+  font-family: 'Poppins';
   color: var(--text-main);
 }
 
@@ -471,9 +473,10 @@ body.js-ready .productsGrid .product.scroll-reveal.is-visible:hover {
 }
 
 .newPrice {
-  color: #8a4b08;
-  font-size: 1.45rem;
-  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
