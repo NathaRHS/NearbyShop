@@ -33,7 +33,7 @@ function FaqPage() {
 
           <article className="question">
             <h2>Can I modify or cancel my order after validation?</h2>
-            <p>We process orders quickly to guarantee you a fast delivery. You have a short period (approximately 24 hours) to contact us by [email/phone] in order to modify information or cancel the purchase. Once the package is shipped, no modification is possible.</p>
+            <p>We process orders quickly to guarantee you a fast delivery. You have a short period (approximately 24 hours) to contact us by email at contact@nearbyshop.store or by phone at +1 559-597-1025 in order to modify information or cancel the purchase. Once the package is shipped, no modification is possible.</p>
           </article>
 
           <article className="question">
@@ -96,7 +96,7 @@ function FaqPage() {
         </section>
 
         <section className="faqContact">
-          <p>You haven&apos;t found your answer? Contact our team here: contact@nearby-shop.store</p>
+          <p>You haven&apos;t found your answer? Contact our team here: contact@nearbyshop.store or +1 559-597-1025</p>
         </section>
       </main>
 

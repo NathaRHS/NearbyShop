@@ -80,7 +80,7 @@
             <h2>Our Commitment to You</h2>
             <p>
               At NEARBY SHOP LLC, you aren't just a customer; you are part of a
-              global community. Whether you are in Sydney, Singapore, or Kuala
+              global community. Whether you are in Sydney,United-States,Singapore, or Kuala
               Lumpur, our dedicated international support team is available to
               ensure your shopping experience is seamless, secure, and satisfying.
             </p>

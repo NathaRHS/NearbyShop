@@ -31,7 +31,8 @@ function PrivacyPolicyPage() {
             <ul className="termList">
               <li>Business Address: 117 S LEXINGTON ST STE 100, HARRISONVILLE MO 64701, USA.</li>
               <li>Federal EIN: 30-1452716.</li>
-              <li>Contact Email: contact@nearby-shop.store</li>
+              <li>Contact Email: contact@nearbyshop.store</li>
+              <li>Contact Phone: +1 559-597-1025</li>
             </ul>
           </article>
 
@@ -74,7 +75,7 @@ function PrivacyPolicyPage() {
             <ul className="termList">
               <li>Request access to your personal data.</li>
               <li>Request correction or erasure of your data.</li>
-              <li>Object to processing for marketing purposes. To exercise these rights, please contact us at contact@nearbyshop-store.store</li>
+              <li>Object to processing for marketing purposes. To exercise these rights, please contact us at contact@nearbyshop.store or +1 559-597-1025.</li>
             </ul>
           </article>
 
@@ -87,7 +88,11 @@ function PrivacyPolicyPage() {
         <div className="termsClosing">
           <h3>9. Contact Details</h3>
           <p>If you have any questions about this Privacy Policy, please contact us:</p>
-          <p>NEARBY SHOP LLC 117 S LEXINGTON ST STE 100, HARRISONVILLE MO 64701, USA.</p>
+          <ul className="termList">
+            <li>Email: contact@nearbyshop.store</li>
+            <li>Phone: +1 559-597-1025</li>
+            <li>Mailing Address: 117 S LEXINGTON ST STE 100, HARRISONVILLE MO 64701, USA.</li>
+          </ul>
         </div>
       </section>
       <Footer />

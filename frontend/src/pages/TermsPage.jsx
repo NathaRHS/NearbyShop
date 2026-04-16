@@ -35,7 +35,7 @@ function TermsPage() {
 
           <article className="termCard">
             <h3>2. Shipping Policy &amp; Options</h3>
-            <p>To ensure a reliable experience for our customers in Australia and Asia, we offer two distinct shipping methods from our international distribution centers:</p>
+            <p>To ensure a reliable experience for our customers in United States , Australia and Asia, we offer two distinct shipping methods from our international distribution centers:</p>
             <ul className="termList">
               <li>Standard Shipping: Reliable delivery with a typical timeframe of 02 to 04 business days.</li>
               <li>VIP Priority Shipping: Our premium service including Express Delivery and Full Shipping Insurance. This option provides a shorter delivery window of 24 hours business days and covers the package against loss or damage during transit.</li>
@@ -70,7 +70,8 @@ function TermsPage() {
           <article className="termCard">
             <h3>6. Contact Information</h3>
             <ul className="termList">
-              <li>Email: contact@nearby-shop.store</li>
+              <li>Email: contact@nearbyshop.store</li>
+              <li>Phone: +1 559-597-1025</li>
               <li>Mailing Address: 117 S LEXINGTON ST STE 100, HARRISONVILLE MO 64701, USA</li>
             </ul>
           </article>
