@@ -37,6 +37,8 @@ function HomePage() {
   useEffect(() => {
     let isMounted = true
 
+    document.title = "NearbyShop"
+
     async function loadProducts() {
       try {
         const data = await fetchCatalogProducts()
